@@ -1,32 +1,33 @@
 {
-  "name": "serverless-s3-deploy",
-  "version": "0.9.0",
-  "description": "S3 Asset copy for serverless",
+  "name": "serverless-upload-assets-to-s3",
+  "version": "1.0.0",
+  "description": "serverless plugin to upload assets to a S3 bucket",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm publish"
   },
-  "author": "Curtis Maloney",
-  "contributors": [
-    "Dan Rumney <dancrumb@gmail.com>"
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/funkybob/serverless-s3-deploy.git"
+    "url": "git+https://github.com/giorgio-zamparelli/serverless-upload-assets-to-s3.git"
   },
+  "author": "Giorgio Zamparelli <giorgio.zamparelli@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giorgio-zamparelli/serverless-upload-assets-to-s3/issues"
+  },
+  "homepage": "https://github.com/giorgio-zamparelli/serverless-upload-assets-to-s3",
   "dependencies": {
-    "bluebird": "^3.7.1",
-    "glob-all": "^3.1.0",
-    "mime-types": "^2.1.24"
+    "bluebird": "3.7.2",
+    "glob-all": "3.1.0",
+    "mime-types": "2.1.25"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint": "6.6.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1"
   }
 }

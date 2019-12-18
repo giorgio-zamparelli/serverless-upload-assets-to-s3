@@ -1,11 +1,11 @@
-# serverless-s3-deploy
+# serverless-upload-assets-to-s3
 
-Plugin for serverless to deploy files to a variety of S3 Buckets
+Serverless plugin that uploads assets to an S3 bucket
 
 # Installation
 
 ```
- npm install --save-dev serverless-s3-deploy
+ npm install --save-dev serverless-upload-assets-to-s3
 ```
 
 # Usage
@@ -14,7 +14,7 @@ Add to your serverless.yml:
 
 ```
   plugins:
-    - serverless-s3-deploy
+    - serverless-upload-assets-to-s3
 
   custom:
     assets:
@@ -77,7 +77,7 @@ basis:
           files:
 ```
 
-The default value is `private`. Options are defined
+The default value is `public-read`. Options are defined
 [here](http://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl).
 
 ## Content Type
@@ -195,20 +195,5 @@ a good starting point:
 }
 ```
 
-## Verbosity
-
-Verbosity cloud be enabled using either of these methods:
-
-Configuration:
-
-```
-  custom:
-    assets:
-      auto: true
-```
-
-Cli:
-
-```
-  sls s3deploy -v
-```
+## Acknowledgements
+This project started as a fork of version 0.8.2 of [serverless-s3-deploy](https://github.com/funkybob/serverless-s3-deploy)
